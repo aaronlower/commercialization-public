@@ -110,7 +110,7 @@ You can specify one `SystemDisk` section. Here's the required and optional eleme
 </tr>
 <tr class="even">
 <td align="left"><p><code>RestoreFromIndex</code></p></td>
-<td align="left"><p>Optional. The index of the image within install.wim to be applied during bare metal recovery. This element is optional and is only needed on manufacturer-created recovery media</p></td>
+<td align="left"><p>Required. The index of the image within install.wim to be applied during bare metal recovery. This element is required and is needed on manufacturer-created recovery media.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><code>WindowsREPartition</code></p></td>
