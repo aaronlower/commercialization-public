@@ -90,7 +90,7 @@ To create the recovery media that you can include with the PC, you must have the
 
     where *D:\\sources\\install.wim* is either the base Windows image or a customized push-button reset recovery image.
 
-**Step 5: Optional: Add bare metal recovery configuration scripts**
+**Step 5: Add bare metal recovery configuration scripts**
 
 -   If you're using a customized partition layout, add bare metal recovery configuration scripts to the working folder, under \\sources. For more info, see [Bare Metal Reset/Recovery: Enable Your Users to Create Media](bare-metal-resetrecovery-enable-your-users-to-create-media-and-to-recover-hard-drive-space.md).
 
