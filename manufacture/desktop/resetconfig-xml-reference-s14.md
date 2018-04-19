@@ -109,18 +109,18 @@ You can specify one `SystemDisk` section. Here's the required and optional eleme
 <td align="left"><p>Required. The partition to which the OS should be restored. The ESP or active partition must be on the same disk as the OS.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><code>RestoreFromIndex</code></p></td>
-<td align="left"><p>Optional. The index of the image within install.wim to be applied during bare metal recovery. This element is optional and is only needed on manufacturer-created recovery media</p></td>
+<td align="left"><p><code>WindowsREPartition</code></p></td>
+<td align="left"><p>Required. Specifies the partition where the Windows RE boot image is installed.</p>
+<p>The <code>WindowsREPartition</code> and <code>WindowsREPath</code> elements are optional, but they must be used together. If only one of these elements is present, your user won't be able to repartition the hard drive.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><code>WindowsREPartition</code></p></td>
-<td align="left"><p>Optional. Specifies the partition where the Windows RE boot image is installed.</p>
+<td align="left"><p><code>WindowsREPath</code></p></td>
+<td align="left"><p>Required. Specifies the folder path where the Winre.wim boot image is copied and staged, relative to the root of the partition specified in the <code>WindowsREPartition</code> element.</p>
 <p>The <code>WindowsREPartition</code> and <code>WindowsREPath</code> elements are optional, but they must be used together. If only one of these elements is present, your user won't be able to repartition the hard drive.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><code>WindowsREPath</code></p></td>
-<td align="left"><p>Optional. Specifies the folder path where the Winre.wim boot image is copied and staged, relative to the root of the partition specified in the <code>WindowsREPartition</code> element.</p>
-<p>The <code>WindowsREPartition</code> and <code>WindowsREPath</code> elements are optional, but they must be used together. If only one of these elements is present, your user won't be able to repartition the hard drive.</p></td>
+<td align="left"><p><code>RestoreFromIndex</code></p></td>
+<td align="left"><p>Optional. The index of the image within install.wim to be applied during bare metal recovery. This element is optional and is only needed on manufacturer-created recovery media</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><code>Compact</code></p></td>
